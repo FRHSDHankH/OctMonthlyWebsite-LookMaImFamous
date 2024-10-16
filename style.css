@@ -1,0 +1,59 @@
+.scale {
+  transition: 0.2s;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.scale:active {
+  transform: scale(1);
+}
+
+.bg-banner-big {
+  background-image: url(imgs/MercedesBannerDesktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.bg-banner-small {
+  background-image: url(imgs/MercedesBannerPhone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.header-text {
+  font-family: roboto-mono, monospace;
+}
+
+.nav-font {
+  font-family: quicksand, sans-serif;
+  font-weight: 200;
+}
+
+.text-font {
+  font-family: quicksand, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
