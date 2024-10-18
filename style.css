@@ -26,6 +26,10 @@
   height: 60vh;
 }
 
+.bg-kinda-transparent {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -43,10 +47,6 @@
   background: #555;
 }
 
-.header-text {
-  font-family: roboto-mono, monospace;
-}
-
 .nav-font {
   font-family: quicksand, sans-serif;
   font-weight: 200;
@@ -56,4 +56,19 @@
   font-family: quicksand, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.iframe-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
