@@ -27,7 +27,11 @@
 }
 
 .bg-kinda-transparent {
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.5);
+=======
+  background-color: rgba(255, 255, 255, 0.3);
+>>>>>>> 0c2173580650c5bcf8df7b336c0e8189969c4593
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +75,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+<<<<<<< HEAD
 }
 
 .wrap {
@@ -107,4 +112,6 @@
 .wrap:hover .card {
   transform: scale(1);
   opacity: 0.3;
+=======
+>>>>>>> 0c2173580650c5bcf8df7b336c0e8189969c4593
 }
