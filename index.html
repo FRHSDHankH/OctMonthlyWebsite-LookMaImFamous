@@ -2,29 +2,33 @@
 <html lang="en">
   <head>
     <title>Karl Benz</title>
-    <!-- Required meta tags -->
+    <!-- Required meta tags for character set and responsive design -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.2.1 for styling the page -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Typekit font stylesheet -->
     <link rel="stylesheet" href="https://use.typekit.net/eej3xpy.css">
   </head>
 
   <body class="bg-black overflow-x-hidden">
     <header>
-      <nav class="navbar navbar-expand-lg bg-kinda-transparent fixed-top nav-font">
+      <!-- Navigation bar for larger screens -->
+      <nav class="navbar navbar-expand-lg bg-kinda-transparent fixed-top nav-font d-none d-lg-block">
         <div class="container-fluid">
-          <a class="navbar-brand scale" href="#">Karl Benz</a>
+          <a class="navbar-brand scale" href="https://group.mercedes-benz.com/company/tradition/founders-pioneers/carl-benz.html" target="_blank">Karl Benz</a>
+          <!-- Button for toggling the navbar on smaller screens -->
           <button
             class="navbar-toggler"
             type="button"
@@ -44,16 +48,42 @@
           </div>
         </div>
       </nav>
+      <!-- Navigation bar for smaller screens -->
+      <nav class="navbar navbar-expand-lg bg-kinda-transparent fixed-top nav-font d-lg-none d-sm-block">
+        <div class="container-fluid">
+          <a class="navbar-brand scale" href="https://group.mercedes-benz.com/company/tradition/founders-pioneers/carl-benz.html" target="_blank">Karl Benz</a>
+          <!-- Button for toggling the navbar on smaller screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#top">Home</a>
+              <a class="nav-link" href="#info">Information</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="container-fluid d-none d-lg-block id="top"">
+      <!-- Banner for larger screens -->
+      <div class="container-fluid d-none d-lg-block" id="top">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 p-0 m-0">
             <img src="imgs/MercedesBannerDesktop.png" alt="BigBanner" class="img-fluid">
           </div>
         </div>
       </div>
-      <div class="container-fluid d-lg-none d-sm-block id="top"">
+      <!-- Banner for smaller screens -->
+      <div class="container-fluid d-lg-none d-sm-block" id="top">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 p-0 m-0">
             <img src="imgs/MercedesBannerPhone.png" alt="SmallBanner" class="img-fluid">
@@ -64,6 +94,7 @@
         <div class="row">
           <div class="col-12 p-0 m-0">
             <div class="iframe-wrap">
+              <!-- Embedded YouTube video with specific parameters -->
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/csAXruiBLTs?si=-tZ8PE2eglwXsJ6s&amp&start=16&end=47&autoplay=1&hd=1&controls=0&disablekb=1&loop=1&showinfo=0&mute=1&modestbranding=1&rel=0&playlist=csAXruiBLTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
           </div>
@@ -71,14 +102,15 @@
       </div>
       <div class="container">
         <div class="row my-3">
-          <div class="col-12 text-center text-white fs-1 text-font">
+          <div class="col-12 text-center text-white fs-1 text-font" id="info">
             Hover for more info!
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+          <!-- Cards containing information about Karl Benz -->
+          <div class="col-xl-3 col-md-6 col-sm-12 my-3">
             <div class="wrap mx-auto">  
-              <div class="card" style="width: 20rem;">
+              <div class="card" style="width: 18rem;">
                 <img src="imgs/karlbenzEdit.png" class="card-img-top img-fluid">
               </div>
               <div class="text-light fs-4 caption text-center d-flex align-items-center justify-content-center text-font">
@@ -86,9 +118,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+          <div class="col-xl-3 col-md-6 col-sm-12 my-3">
             <div class="wrap mx-auto">
-              <div class="card" style="width: 20rem;">
+              <div class="card" style="width: 18rem;">
                 <img src="imgs/BenzCar.jpg" class="card-img-top img-fluid">
               </div>
               <div class="text-light fs-4 caption text-center d-flex align-items-center justify-content-center text-font">
@@ -96,9 +128,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+          <div class="col-xl-3 col-md-6 col-sm-12 my-3">
             <div class="wrap mx-auto">  
-              <div class="card" style="width: 20rem;">
+              <div class="card" style="width: 18rem;">
                 <img src="imgs/BenzEngineEdited.png" class="card-img-top img-fluid">
               </div>
               <div class="text-light fs-4 caption text-center d-flex align-items-center justify-content-center text-font">
@@ -106,9 +138,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 my-3">
+          <div class="col-xl-3 col-md-6 col-sm-12 my-3">
             <div class="wrap mx-auto">  
-              <div class="card" style="width: 20rem;">
+              <div class="card" style="width: 18rem;">
                 <img src="imgs/OldMoneyFrFr.png" class="card-img-top img-fluid">
               </div>
               <div class="text-light fs-4 caption text-center d-flex align-items-center justify-content-center text-font">
@@ -118,63 +150,133 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="container my-3 bg-dark-subtle rounded-5">
+      <div class="container-fluid text-font">
+        <!-- Section for Early Life details -->
+        <div class="container my-3 bg-dark-subtle rounded-5 py-3">
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-center text-center display-5 text-dark">
               Early Life:
             </div>
           </div>
           <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-center text-center text-dark">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quod fugit quia velit ab esse quam reiciendis laboriosam quos ex.
+            <div class="col-12 d-flex align-items-center justify-content-center text-dark">
+              <ul>
+                <li>
+                  Born on November 25, 1844, in Karlsruhe, Germany.
+                </li>
+                <li>
+                  Raised by his single mother after his father, a locomotive driver, passed away when Benz was just two years old.
+                </li>
+                <li>
+                  Showed an early interest in engineering and mechanics, leading him to pursue studies in mechanical engineering at the Karlsruhe Polytechnic School.
+                </li>
+                <li>
+                  Despite financial hardships, his mother supported his education, encouraging his technical ambitions.
+                </li>
+                <li>
+                  Worked for various engineering firms after graduation before establishing his own mechanical workshop.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="container my-3 bg-dark-subtle rounded-5">
+        <!-- Section for Major Accomplishments -->
+        <div class="container my-3 bg-dark-subtle rounded-5 py-3">
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-center text-center display-5 text-dark">
-              Early Life:
+              Major Accomplishments:
             </div>
           </div>
           <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-center text-center text-dark">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quod fugit quia velit ab esse quam reiciendis laboriosam quos ex.
+            <div class="col-12 d-flex align-items-center justify-content-center text-dark">
+              <ul>
+                <li>
+                  Invented the first practical automobile powered by an internal combustion engine, the "Motorwagen," in 1885.
+                </li>
+                <li>
+                  Patented his automobile design, receiving German patent number 37435 on January 29, 1886.
+                </li>
+                <li>
+                  Founded Benz & Cie. in 1883, which became the world’s largest automobile company by 1900.
+                </li>
+                <li>
+                  Introduced several innovations, including the electric ignition system, the spark plug, and the carburetor.
+                </li>
+                <li>
+                  Pioneered mass production techniques and assembly lines for manufacturing cars.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="container my-3 bg-dark-subtle rounded-5">
+        <!-- Section for Significant Contributions to Society -->
+        <div class="container my-3 bg-dark-subtle rounded-5 py-3">
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-center text-center display-5 text-dark">
-              Early Life:
+              Significant contributions to society:
             </div>
           </div>
           <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-center text-center text-dark">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quod fugit quia velit ab esse quam reiciendis laboriosam quos ex.
+            <div class="col-12 d-flex align-items-center justify-content-center text-dark">
+              <ul>
+                <li>
+                  Revolutionized personal and commercial transportation, making travel faster and more accessible.
+                </li>
+                <li>
+                  His inventions laid the foundation for the global automotive industry and influenced modern vehicle design.
+                </li>
+                <li>
+                  Inspired future technological advances, leading to the development of various motor vehicles and improving urban infrastructure.
+                </li>
+                <li>
+                  Enabled the growth of associated industries, including fuel, roads, and repair services.
+                </li>
+                <li>
+                  Set the stage for economic changes, transforming trade, commuting, and leisure travel.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="container my-3 bg-dark-subtle rounded-5">
+        <!-- Section for Challenges faced -->
+        <div class="container my-3 bg-dark-subtle rounded-5 py-3">
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-center text-center display-5 text-dark">
-              Early Life:
+              Challenges:
             </div>
           </div>
           <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-center text-center text-dark">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quod fugit quia velit ab esse quam reiciendis laboriosam quos ex.
+            <div class="col-12 d-flex align-items-center justify-content-center text-dark">
+              <ul>
+                <li>
+                  Faced skepticism and resistance from society, which was not accustomed to motorized vehicles.
+                </li>
+                <li>
+                  Struggled financially in his early ventures and faced difficulties attracting investors.
+                </li>
+                <li>
+                  Experienced patent disputes and competition, particularly from other automotive pioneers like Daimler.
+                </li>
+                <li>
+                  Encountered technical challenges in developing reliable engines and vehicle components.
+                </li>
+                <li>
+                  Dealt with initial public distrust and regulatory challenges, as motor vehicles were often seen as dangerous and disruptive.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- Early Years: When he was two years old, his name was changed to Karl Friedrich Benz in honor of his father, who passed away from pneumonia. His mother worked hard to provide him with a quality education even though they were poor. Benz was an exceptional student at the local Karlsruhe school. -->
     <footer>
-      <!-- place footer here -->
+      <!-- Footer section with copyright notice -->
+      <div class="bg-dark-subtle d-flex justify-content-center align-items-center">
+        ©2024 HBTJ Inc.
+      </div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <!-- Bootstrap JavaScript Libraries for functionality -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
